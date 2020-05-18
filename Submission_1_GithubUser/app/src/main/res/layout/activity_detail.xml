@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".DetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/img_det_photo"
+             android:layout_width="104dp"
+             android:layout_height="104dp"
+             android:layout_marginStart="20dp"
+             android:layout_marginTop="20dp"
+             android:src="@drawable/user1"/>
+
+            <LinearLayout
+                android:id="@+id/ll_group1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/img_det_photo"
+                android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/github"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_det_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/username_user"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="10dp" />
+
+                <View
+                    android:id="@+id/view_1"
+                    android:layout_width="24dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/img_det_photo"
+                android:layout_marginTop="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/repository"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/followers"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/following"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_group3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/ll_group2"
+                android:layout_marginTop="11dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_det_repository"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@android:color/black"
+                    android:text="@string/zero"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_det_followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@android:color/black"
+                    android:text="@string/zero"
+                    android:textSize="18sp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="80dp"/>
+
+                <TextView
+                    android:id="@+id/tv_det_following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@android:color/black"
+                    android:text="@string/zero"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/ll_group4"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/ll_group3"
+             android:layout_marginTop="16dp"
+             android:layout_marginStart="8dp"
+             android:layout_marginEnd="8dp"
+             android:orientation="vertical">
+
+            <include
+                layout="@layout/bio"/>
+
+         </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="16dp"
+    android:id="@+id/card_view"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_photo_user"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/user1"/>
+
+        <TextView
+            android:id="@+id/tv_name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/img_photo_user"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/name_user"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:maxLines="1"/>
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="24dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_name_user"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/img_photo_user"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_location_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_1"
+            android:layout_marginStart="26dp"
+            android:layout_toEndOf="@id/img_photo_user"
+            android:fontFamily="@font/roboto"
+            android:textSize="14sp"
+            android:text="@string/location_user"
+            android:maxLines="2"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

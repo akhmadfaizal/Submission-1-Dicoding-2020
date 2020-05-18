@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_det_name_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="5dp"
+            android:text="@string/name_user"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_det_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@android:color/black"
+            android:text="@string/company"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_det_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@android:color/black"
+            android:text="@string/location_user"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/roboto"
+        android:text="   Bio   "
+        android:layout_marginStart="15dp"
+        android:background="#ffffff"
+        android:textSize="16sp" />
+
+</RelativeLayout>
